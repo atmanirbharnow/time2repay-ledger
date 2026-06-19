@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carbon Processing Balance Utility - Time2Repay</title>
     <style>
+        /* GOV.UK Design System Core Tokens */
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -14,8 +15,9 @@
             -webkit-font-smoothing: antialiased;
         }
         
+        /* Service Header Bar */
         .govuk-header {
-            background-color: #003020;
+            background-color: #003020; /* Deep Institutional Green */
             border-bottom: 10px solid #00703c;
             padding: 15px 30px;
         }
@@ -26,12 +28,14 @@
             letter-spacing: -0.5px;
         }
 
+        /* Layout Container */
         .govuk-width-container {
             max-width: 960px;
             margin: 0 auto;
             padding: 30px 15px;
         }
 
+        /* Typography Hierarchy */
         h1 { font-size: 40px; font-weight: 700; margin-bottom: 25px; line-height: 1.1; }
         h2 { font-size: 28px; font-weight: 700; margin-top: 40px; margin-bottom: 20px; border-bottom: 4px solid #0b0c0c; padding-bottom: 5px; }
         h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
@@ -48,7 +52,9 @@
             border: 4px solid #0b0c0c;
             padding: 25px;
             background-color: #f3f2f1;
-            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
         .voucher-card__metric {
             font-size: 38px;
@@ -82,6 +88,7 @@
             text-align: left;
         }
 
+        /* GOV.UK Green Action Button */
         .govuk-button {
             background-color: #00703c;
             color: #ffffff;
@@ -92,6 +99,7 @@
             cursor: pointer;
             text-decoration: none;
             display: inline-block;
+            text-align: center;
         }
         .govuk-button:hover { background-color: #005a30; }
 
@@ -121,35 +129,47 @@
     <div class="govuk-width-container">
         <main>
             <h1>Volumetric Processing Quotas & Yield Architecture</h1>
-            <p>Every metric tonne of Carbon Dioxide equivalent ($tCO_2e$) extracted from your campus infrastructure demands strict computational baseline verification. ECF operates a pure volumetric ledger priced at a static index of <strong>民间 processing fee of ₹25 per $tCO_2e$</strong>.</p>
+            <p>Every metric tonne of Carbon Dioxide equivalent ($tCO_2e$) extracted from your campus infrastructure demands strict computational baseline verification. ECF operates a pure volumetric ledger priced at a static index of <strong>processing fee of ₹25 per $tCO_2e$</strong>.</p>
             
             <div class="govuk-inset-text">
                 <strong>Prepaid Card Policy:</strong> Unused data token allocations remain secured on your organizational card balance. If dynamic data collection maps a surplus footprint at final registry validation, the residue is fully refunded to your bank account.
             </div>
 
-            <h2>1. Initialize Volumetric Account Balance</h2>
-            <p>Select the standard prepaid operational volume required to open your engineering data validation pipeline:</p>
+            <h2>Select Your 6-Month Commitment Journey Quota</h2>
+            <p>Initialize your validation tunnel by securing the allocation block matching your aggregate infrastructure footprint tier:</p>
 
             <div class="voucher-card-container">
+                <!-- Tier A Link Injected -->
                 <div class="voucher-card">
-                    <h3>Core Allocation</h3>
-                    <div class="voucher-card__metric">1,000 tCO₂e</div>
-                    <div class="voucher-card__cost">Prepaid Processing Load: ₹25,000</div>
-                    <a href="https://rzp.io/l/your_voucher_1k" class="govuk-button">Load Quota</a>
+                    <div>
+                        <h3>Tier A: Core Allocation</h3>
+                        <p style="font-size: 14px; color: #505a5f;">Capacity: 100 kW – 500 kW</p>
+                        <div class="voucher-card__metric">₹3,999/- <span style="font-size: 14px; font-weight: normal; color: #505a5f;">a month</span></div>
+                        <div class="voucher-card__cost">6-Month Processing Cycle: ₹23,994 total</div>
+                    </div>
+                    <a href="https://rzp.io/rzp/b76GXjs" class="govuk-button">Secure Allocation</a>
                 </div>
                 
+                <!-- Tier B Link Injected -->
                 <div class="voucher-card" style="background-color: #e6f0ec; border-color: #00703c;">
-                    <h3>Standard Pool</h3>
-                    <div class="voucher-card__metric">2,000 tCO₂e</div>
-                    <div class="voucher-card__cost">Prepaid Processing Load: ₹50,000</div>
-                    <a href="https://rzp.io/l/your_voucher_2k" class="govuk-button">Load Quota</a>
+                    <div>
+                        <h3>Tier B: Standard Pool</h3>
+                        <p style="font-size: 14px; color: #505a5f;">Capacity: 500 kW – 1,000 kW</p>
+                        <div class="voucher-card__metric">₹7,799/- <span style="font-size: 14px; font-weight: normal; color: #505a5f;">a month</span></div>
+                        <div class="voucher-card__cost">6-Month Processing Cycle: ₹46,794 total</div>
+                    </div>
+                    <a href="https://rzp.io/rzp/3yVygKtQ" class="govuk-button">Secure Allocation</a>
                 </div>
 
+                <!-- Tier C Link Injected -->
                 <div class="voucher-card">
-                    <h3>Enterprise Block</h3>
-                    <div class="voucher-card__metric">5,000 tCO₂e</div>
-                    <div class="voucher-card__cost">Prepaid Processing Load: ₹1,25,000</div>
-                    <a href="https://rzp.io/l/your_voucher_5k" class="govuk-button">Load Quota</a>
+                    <div>
+                        <h3>Tier C: Enterprise Block</h3>
+                        <p style="font-size: 14px; color: #505a5f;">Capacity: 1,000 kW – 1,500 kW</p>
+                        <div class="voucher-card__metric">₹11,999/- <span style="font-size: 14px; font-weight: normal; color: #505a5f;">a month</span></div>
+                        <div class="voucher-card__cost">6-Month Processing Cycle: ₹71,994 total</div>
+                    </div>
+                    <a href="https://rzp.io/rzp/niZTdHS" class="govuk-button">Secure Allocation</a>
                 </div>
             </div>
 
@@ -159,43 +179,33 @@
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Prepaid Volume Block</th>
-                        <th>Data Validation Retainer (₹25/Unit)</th>
-                        <th>Projected Registry Yield (10-Year Cycle)</th>
+                        <th>Capacity Processing Block</th>
+                        <th>6-Month Cycle Total Fee</th>
+                        <th>Data Validation Metric Rate</th>
                         <th>Account Status</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <td><strong>1,000 tCO₂e</strong></td>
-                        <td>₹25,000</td>
-                        <td>Projected Asset Balance Realised</td>
+                        <td><strong>Tier A (100 kW – 500 kW)</strong></td>
+                        <td>₹23,994</td>
+                        <td>₹25 / tCO₂e Base Value</td>
                         <td>Available for Entry</td>
                     </tr>
                     <tr>
-                        <td><strong>2,000 tCO₂e</strong></td>
-                        <td>₹50,000</td>
-                        <td>Projected Asset Balance Realised</td>
+                        <td><strong>Tier B (500 kW – 1,000 kW)</strong></td>
+                        <td>₹46,794</td>
+                        <td>₹25 / tCO₂e Base Value</td>
                         <td>Available for Entry</td>
                     </tr>
                     <tr>
-                        <td><strong>3,000 tCO₂e</strong></td>
-                        <td>₹75,000</td>
-                        <td>Projected Asset Balance Realised</td>
-                        <td>Available for Entry</td>
-                    </tr>
-                    <tr>
-                        <td><strong>5,000 tCO₂e</strong></td>
-                        <td>₹1,25,000</td>
-                        <td>Projected Asset Balance Realised</td>
+                        <td><strong>Tier C (1,000 kW – 1,500 kW)</strong></td>
+                        <td>₹71,994</td>
+                        <td>₹25 / tCO₂e Base Value</td>
                         <td>Available for Entry</td>
                     </tr>
                 </tbody>
             </table>
-
-            <p style="margin-top: 30px;">
-                <a href="https://<your-github-username>.github.io/atmanirbhar-100mtons/" style="color: #1d70b8; font-weight: bold; text-decoration: none;">&larr; Return to Main Capacity Intake Terminal</a>
-            </p>
         </main>
 
         <footer>
