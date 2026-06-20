@@ -44,28 +44,41 @@
         /* The Apple-Style Prepaid Card Visual Box */
         .voucher-card-container {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            grid-template-columns: repeat(4, 1fr); /* Forces 4 cards in a single line */
             gap: 20px;
             margin: 30px 0;
         }
+        
+        /* Responsive fallback for smaller viewports to prevent breakage */
+        @media (max-width: 800px) {
+            .voucher-card-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (max-width: 480px) {
+            .voucher-card-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
         .voucher-card {
             border: 4px solid #0b0c0c;
-            padding: 25px;
+            padding: 20px;
             background-color: #f3f2f1;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
         }
         .voucher-card__metric {
-            font-size: 38px;
+            font-size: 32px;
             font-weight: 800;
             color: #003020;
-            margin: 10px 0;
+            margin: 5px 0;
         }
         .voucher-card__cost {
-            font-size: 16px;
+            font-size: 15px;
             color: #505a5f;
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         /* Value Ledger Grid */
@@ -150,29 +163,44 @@
             <h1>How Much Value Is Hidden Inside Your Existing Sustainability Investments?</h1>
             <p>Solar. Water. Waste. Nature. Most organizations invest in sustainability but never measure the full value they have already created.</p>
             
-            <a href="https://forms.gle/98Uy9s73VCBb2rdW8" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
+            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
 
-            <!-- SECTION 2: THE HIDDEN PROBLEM -->
+            <!-- SECTION 2: THE HIDDEN PROBLEM (4 CARDS IN A SINGLE LINE) -->
             <h2>1. Money Is Spent. Value Often Goes Untracked.</h2>
-            <p>Organizations routinely invest capital into active setups like:</p>
-            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Solar Systems</p>
-            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Water Conservation</p>
-            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Waste Management</p>
-            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Tree Plantations</p>
-            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 20px;">✓ Energy Efficiency</p>
-            <p>But many never document the long-term value these assets continue to generate. As a result:</p>
+            <p>Organizations invest capital, but many never document the long-term value these assets continue to generate. As a result:</p>
             
-            <div class="govuk-inset-text">
-                <p style="margin-bottom: 10px;">• <strong>Savings remain untracked</strong></p>
-                <p style="margin-bottom: 10px;">• <strong>Opportunities remain hidden</strong></p>
-                <p style="margin-bottom: 0;">• <strong>Assets remain underutilized</strong></p>
+            <div class="voucher-card-container">
+                <div class="voucher-card">
+                    <div>
+                        <h3>💰 Spent</h3>
+                        <div class="voucher-card__cost">Capital is actively deployed into sustainability projects.</div>
+                    </div>
+                </div>
+                <div class="voucher-card">
+                    <div>
+                        <h3>📉 Untracked</h3>
+                        <div class="voucher-card__cost">Accumulated savings are rarely captured or calculated.</div>
+                    </div>
+                </div>
+                <div class="voucher-card">
+                    <div>
+                        <h3>🔍 Hidden</h3>
+                        <div class="voucher-card__cost">Advanced asset development opportunities remain invisible.</div>
+                    </div>
+                </div>
+                <div class="voucher-card" style="background-color: #f3f2f1; border-color: #0b0c0c;">
+                    <div>
+                        <h3>⚠️ Underutilized</h3>
+                        <div class="voucher-card__cost">Completed green installations stay heavily unquantified.</div>
+                    </div>
+                </div>
             </div>
 
             <!-- SECTION 3: WHERE VALUE COMES FROM -->
             <h2>2. Every Environmental Asset Creates Value</h2>
             <p>We help you quantify hidden value across four distinct environmental sectors:</p>
 
-            <div class="voucher-card-container" style="margin-bottom: 40px;">
+            <div class="voucher-card-container">
                 <div class="voucher-card">
                     <div>
                         <h3>⚡ Energy Savings</h3>
@@ -236,9 +264,9 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 6: DEVELOPMENT PROGRAMS -->
+            <!-- SECTION 6: DEVELOPMENT PROGRAMS (With line updates) -->
             <h2>5. Development Programs</h2>
-            <p>Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
+            <p>Assets showing significant recovery potential may qualify for advanced development. Includes 12 months of registry participation, asset tracking and development screening. Fees apply only after review and classification:</p>
             
             <table class="govuk-table">
                 <thead>
@@ -256,11 +284,11 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 7: LIVE REGISTRY ACTIVITY -->
+            <!-- SECTION 7: LIVE REGISTRY ACTIVITY (4 CARDS IN A SINGLE LINE) -->
             <h2>6. Growing Environmental Asset Network</h2>
             <p>Real-time progress across our shared nationwide registry database:</p>
             
-            <div class="voucher-card-container" style="margin-bottom: 40px;">
+            <div class="voucher-card-container">
                 <div class="voucher-card">
                     <div>
                         <div class="voucher-card__metric">1,000+</div>
@@ -279,7 +307,7 @@
                         <h3>CER Pipeline</h3>
                     </div>
                 </div>
-                <div class="voucher-card">
+                <div class="voucher-card" style="background-color: #e6f0ec; border-color: #00703c;">
                     <div>
                         <div class="voucher-card__metric">Qualified</div>
                         <h3>Development Opportunities</h3>
@@ -301,7 +329,7 @@
 
             <h2>8. Stop Leaving Environmental Value Unmeasured</h2>
             <p>Your sustainability investments may already be creating more value than you realize.</p>
-            <a href="https://forms.gle/98Uy9s73VCBb2rdW8" class="govuk-button" style="margin-top: 10px;">Register My Assets</a>
+            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-top: 10px;">Register My Assets</a>
         </main>
 
         <footer>
