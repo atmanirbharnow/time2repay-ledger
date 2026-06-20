@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carbon Processing Balance Utility - Time2Repay</title>
+    <title>Recover Hidden Value - Time2Repay</title>
     <style>
         /* GOV.UK Design System Core Tokens */
         * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -87,6 +87,14 @@
             border-bottom: 1px solid #bfc1c3;
             text-align: left;
         }
+        .status-tag {
+            background-color: #00703c;
+            color: #ffffff;
+            font-weight: 700;
+            padding: 4px 8px;
+            font-size: 14px;
+            text-transform: uppercase;
+        }
 
         /* GOV.UK Green Action Button */
         .govuk-button {
@@ -111,6 +119,16 @@
             font-size: 19px;
         }
 
+        /* Step Process List */
+        ol.govuk-list--number {
+            margin-left: 25px;
+            font-size: 19px;
+        }
+        ol.govuk-list--number li {
+            margin-bottom: 15px;
+            padding-left: 10px;
+        }
+
         footer {
             margin-top: 60px;
             border-top: 1px solid #bfc1c3;
@@ -123,96 +141,172 @@
 <body>
 
     <div class="govuk-header">
-        <div class="govuk-header__title">Time2Repay Asset Ledger Node</div>
+        <div class="govuk-header__title">Time2Repay</div>
     </div>
 
     <div class="govuk-width-container">
         <main>
             <!-- SECTION 1: HERO -->
             <h1>How Much Value Is Hidden Inside Your Existing Sustainability Investments?</h1>
-            <p>Most organizations never quantify what they have already built.</p>
+            <p>Solar. Water. Waste. Nature. Most organizations invest in sustainability but never measure the full value they have already created.</p>
             
-            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-bottom: 20px;">Assess My Assets</a>
+            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
 
-            <!-- SECTION 2: PROBLEM -->
-            <h2>1. The Disconnected Capital Problem</h2>
+            <!-- SECTION 2: THE HIDDEN PROBLEM -->
+            <h2>1. Money Is Spent. Value Often Goes Untracked.</h2>
+            <p>Organizations routinely invest capital into active setups like:</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Solar Systems</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Water Conservation</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Waste Management</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 10px;">✓ Tree Plantations</p>
+            <p style="font-size: 19px; padding-left: 20px; margin-bottom: 20px;">✓ Energy Efficiency</p>
+            <p>But many never document the long-term value these assets continue to generate. As a result:</p>
+            
             <div class="govuk-inset-text">
-                <strong>Systemic Blind Spots:</strong> Large components of institutional capital are actively routed into deployment fields where <strong>money is spent</strong>, but the total <strong>benefits remain unknown</strong> and the long-term <strong>value goes untracked</strong>.
+                <p style="margin-bottom: 10px;">• <strong>Savings remain untracked</strong></p>
+                <p style="margin-bottom: 10px;">• <strong>Opportunities remain hidden</strong></p>
+                <p style="margin-bottom: 0;">• <strong>Assets remain underutilized</strong></p>
             </div>
 
-            <!-- SECTION 3: WHAT CREATES VALUE -->
-            <h2>2. What Creates Trackable Value</h2>
-            <p>Our verification engine looks directly at your historical and active operational setups to identify latent financial instruments:</p>
+            <!-- SECTION 3: WHERE VALUE COMES FROM -->
+            <h2>2. Every Environmental Asset Creates Value</h2>
+            <p>We help you quantify hidden value across four distinct environmental sectors:</p>
 
-            <div class="voucher-card-container">
+            <div class="voucher-card-container" style="margin-bottom: 40px;">
                 <div class="voucher-card">
                     <div>
                         <h3>⚡ Energy Savings</h3>
-                        <div class="voucher-card__cost">Quantifying performance indexes from solar installation arrays and demand-side efficiencies.</div>
+                        <div class="voucher-card__cost">Reduce electricity consumption and improve energy independence.</div>
                     </div>
                 </div>
                 <div class="voucher-card">
                     <div>
                         <h3>💧 Water Savings</h3>
-                        <div class="voucher-card__cost">Mapping storage capacity geometry and localized graywater treatment recycling loops.</div>
+                        <div class="voucher-card__cost">Lower water costs through conservation, reuse and harvesting.</div>
                     </div>
                 </div>
                 <div class="voucher-card">
                     <div>
                         <h3>♻️ Waste Savings</h3>
-                        <div class="voucher-card__cost">Measuring methane avoidance metrics from source segregation and composting weights.</div>
+                        <div class="voucher-card__cost">Reduce disposal costs while improving resource recovery.</div>
                     </div>
                 </div>
                 <div class="voucher-card" style="background-color: #e6f0ec; border-color: #00703c;">
                     <div>
                         <h3>🌱 Environmental Assets</h3>
-                        <div class="voucher-card__cost">Aggregating raw infrastructure performance data points into high-integrity registry portfolios.</div>
+                        <div class="voucher-card__cost">Build measurable environmental value through sustainability actions.</div>
                     </div>
                 </div>
             </div>
 
-            <!-- SECTION 4: WHY ORGANIZATIONS REGISTER -->
-            <h2>3. Strategic Advantages of Registration</h2>
+            <!-- SECTION 4: WHY REGISTER? -->
+            <h2>3. Registration Creates Visibility</h2>
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Operational Driver</th>
-                        <th>Target Milestone Architecture</th>
+                        <th>Benefit</th>
+                        <th>Outcome</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Recognition</strong></td><td>Transforms invisible green metrics into public-facing national contributions.</td></tr>
-                    <tr><td><strong>Documentation</strong></td><td>Establishes safe, DPDP-compliant evidence trails to block double-counting.</td></tr>
-                    <tr><td><strong>Future Revenue</strong></td><td>Clears structural friction to position portfolios for 10-year generation streams.</td></tr>
-                    <tr><td><strong>Asset Management</strong></td><td>Consolidates decentralized spatial footprints under an active registry tracking ID.</td></tr>
+                    <tr><td><strong>Recognition</strong></td><td>Demonstrate environmental leadership</td></tr>
+                    <tr><td><strong>Documentation</strong></td><td>Create a permanent asset record</td></tr>
+                    <tr><td><strong>Future Opportunities</strong></td><td>Position assets for future development pathways</td></tr>
+                    <tr><td><strong>Asset Management</strong></td><td>Track and manage environmental assets over time</td></tr>
                 </tbody>
             </table>
 
-            <!-- SECTION 5: LIVE REGISTRY NUMBERS -->
-            <h2>4. Real-Time Centralized Ledger Status</h2>
+            <!-- SECTION 5: DEVELOPMENT PATHWAY -->
+            <h2>4. Development Pathway</h2>
+            <p>Every asset starts with registration. Your tracking metrics help define your baseline development bracket:</p>
+
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Ledger Metric Block</th>
-                        <th>Current Cohort Progression Balance</th>
+                        <th>Development Status</th>
+                        <th>CER Potential</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Assets Registered</strong></td><td>1,000+ Active Pipeline Influx Nodes</td></tr>
-                    <tr><td><strong>CER Pipeline</strong></td><td>500,000+ tCO₂e Accumulated Under Verification</td></tr>
-                    <tr><td><strong>Development Opportunities</strong></td><td>Qualified Structural Framework Openings for Year 1</td></tr>
+                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td>101–500</td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td></tr>
                 </tbody>
             </table>
 
-            <!-- SECTION 6: CTA -->
-            <h2>5. Initialize Revenue Pre-Qualification</h2>
-            <p>Stop leaving your environmental capital unmeasured. Link your parameters directly to the main registry backend mapping core.</p>
+            <!-- SECTION 6: DEVELOPMENT PROGRAMS -->
+            <h2>5. Development Programs</h2>
+            <p>Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
+            
+            <table class="govuk-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Fee</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,799</strong></td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
+                </tbody>
+            </table>
+
+            <!-- SECTION 7: LIVE REGISTRY ACTIVITY -->
+            <h2>6. Growing Environmental Asset Network</h2>
+            <p>Real-time progress across our shared nationwide registry database:</p>
+            
+            <div class="voucher-card-container" style="margin-bottom: 40px;">
+                <div class="voucher-card">
+                    <div>
+                        <div class="voucher-card__metric">1,000+</div>
+                        <h3>Registered Assets</h3>
+                    </div>
+                </div>
+                <div class="voucher-card">
+                    <div>
+                        <div class="voucher-card__metric">250+</div>
+                        <h3>Organizations</h3>
+                    </div>
+                </div>
+                <div class="voucher-card">
+                    <div>
+                        <div class="voucher-card__metric">500,000+</div>
+                        <h3>CER Pipeline</h3>
+                    </div>
+                </div>
+                <div class="voucher-card">
+                    <div>
+                        <div class="voucher-card__metric">Qualified</div>
+                        <h3>Development Opportunities</h3>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SECTION 8: WHAT HAPPENS NEXT? -->
+            <h2>7. What Happens Next?</h2>
+            <p>Our process is clear, fast, and designed to map your accomplishments without adding paperwork:</p>
+            
+            <ol class="govuk-list--number" style="margin-bottom: 40px;">
+                <li><strong>Register Your Asset:</strong> Document what you have already built in a simple form.</li>
+                <li><strong>Receive Registry ID:</strong> Secure your official, safe asset tracking code.</li>
+                <li><strong>Asset Classification:</strong> Our core team categorizes your operational totals.</li>
+                <li><strong>Development Screening:</strong> Your project is screened for hidden value pathways.</li>
+                <li><strong>Opportunity Review:</strong> Access your profile overview to review long-term metrics.</li>
+            </ol>
+
+            <h2>8. Stop Leaving Environmental Value Unmeasured</h2>
+            <p>Your sustainability investments may already be creating more value than you realize.</p>
             <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-top: 10px;">Register My Assets</a>
         </main>
 
         <footer>
-            <p>Analytical Audit Division | <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
-            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">All data systems comply explicitly with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim to enforce user safety under the DPDP Act 2023.</p>
+            <p>Analytical Audit Division | <a href="mailto:admin@earthcarbonfoundation.org">admin@earthcarbonfoundation.org</a></p>
+            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">All information systems are managed in alignment with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim under the DPDP Act 2023.</p>
         </footer>
     </div>
 
