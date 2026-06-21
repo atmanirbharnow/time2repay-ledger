@@ -41,7 +41,7 @@
         h3 { font-size: 22px; font-weight: 700; margin-bottom: 10px; }
         p { font-size: 19px; margin-bottom: 20px; max-width: 750px; }
         
-        /* The Apple-Style Prepaid Card Visual Box */
+        /* Forced 4 Cards Inline Grid */
         .voucher-card-container {
             display: grid;
             grid-template-columns: repeat(4, 1fr); /* Forces 4 cards in a single line */
@@ -72,8 +72,9 @@
         .voucher-card__metric {
             font-size: 32px;
             font-weight: 800;
-            color: #003020;
+            color: #00703c;
             margin: 5px 0;
+            word-wrap: break-word;
         }
         .voucher-card__cost {
             font-size: 15px;
@@ -85,7 +86,7 @@
         .govuk-table {
             width: 100%;
             border-collapse: collapse;
-            margin: 30px 0;
+            margin: 30px 0 10px 0;
             font-size: 16px;
         }
         .govuk-table th {
@@ -101,12 +102,22 @@
             text-align: left;
         }
         .status-tag {
-            background-color: #00703c;
-            color: #ffffff;
+            background-color: #e8f5e9;
+            color: #2d6a4f;
             font-weight: 700;
-            padding: 4px 8px;
+            padding: 4px 12px;
             font-size: 14px;
             text-transform: uppercase;
+            border-radius: 20px;
+            display: inline-block;
+            border: 1px solid #c8e6c9;
+        }
+        .table-note-sub {
+            font-size: 15px;
+            color: #505a5f;
+            margin-top: 10px;
+            margin-bottom: 30px;
+            font-style: italic;
         }
 
         /* GOV.UK Green Action Button */
@@ -141,17 +152,22 @@
             margin-bottom: 15px;
             padding-left: 10px;
         }
-
-        footer {
-            margin-top: 60px;
-            border-top: 1px solid #bfc1c3;
-            padding: 30px 0;
-            font-size: 16px;
-            color: #505a5f;
-        }
     </style>
 </head>
 <body>
+
+    <!-- EARTH CARBON FOUNDATION UNIFIED NAV BAR -->
+    <div style="background-color: #ffffff; border-bottom: 1px solid #e2e8f0; padding: 15px 20px;">
+        <div style="max-width: 960px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; font-family: Arial, sans-serif;">
+            <a href="https://earthcarbonfoundation.org" style="text-decoration: none; display: flex; align-items: center; gap: 8px;">
+                <span style="font-size: 1.2rem; font-weight: 700; color: #1b4332;">Earth Carbon Foundation</span>
+            </a>
+            <div style="display: flex; gap: 20px; align-items: center;">
+                <a href="https://earthcarbonfoundation.org" style="color: #2d6a4f; text-decoration: none; font-weight: 600; font-size: 0.95rem;">← Back to Hub</a>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV BAR -->
 
     <div class="govuk-header">
         <div class="govuk-header__title">Time2Repay</div>
@@ -163,7 +179,7 @@
             <h1>How Much Value Is Hidden Inside Your Existing Sustainability Investments?</h1>
             <p>Solar. Water. Waste. Nature. Most organizations invest in sustainability but never measure the full value they have already created.</p>
             
-            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
+            <a href="https://forms.gle/dMhjXy4J1F82fVbo7" target="_blank" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
 
             <!-- SECTION 2: THE HIDDEN PROBLEM (4 CARDS IN A SINGLE LINE) -->
             <h2>1. Money Is Spent. Value Often Goes Untracked.</h2>
@@ -264,9 +280,9 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 6: DEVELOPMENT PROGRAMS (With line updates) -->
+            <!-- SECTION 6: DEVELOPMENT PROGRAMS -->
             <h2>5. Development Programs</h2>
-            <p>Assets showing significant recovery potential may qualify for advanced development. Includes 12 months of registry participation, asset tracking and development screening. Fees apply only after review and classification:</p>
+            <p>Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
             
             <table class="govuk-table">
                 <thead>
@@ -279,38 +295,41 @@
                     <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
                     <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
                     <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,799</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,999</strong></td></tr>
                     <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
                 </tbody>
             </table>
+            <div class="table-note-sub">
+                Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
+            </div>
 
-            <!-- SECTION 7: LIVE REGISTRY ACTIVITY (4 CARDS IN A SINGLE LINE) -->
+            <!-- SECTION 7: LIVE REGISTRY ACTIVITY / IMPACT TRACKING -->
             <h2>6. Growing Environmental Asset Network</h2>
             <p>Real-time progress across our shared nationwide registry database:</p>
             
             <div class="voucher-card-container">
                 <div class="voucher-card">
                     <div>
-                        <div class="voucher-card__metric">1,000+</div>
-                        <h3>Registered Assets</h3>
+                        <div class="voucher-card__metric">1,158+</div>
+                        <h3>Participants</h3>
                     </div>
                 </div>
                 <div class="voucher-card">
                     <div>
-                        <div class="voucher-card__metric">250+</div>
-                        <h3>Organizations</h3>
+                        <div class="voucher-card__metric">800+</div>
+                        <h3>Assets</h3>
                     </div>
                 </div>
                 <div class="voucher-card">
                     <div>
-                        <div class="voucher-card__metric">500,000+</div>
-                        <h3>CER Pipeline</h3>
+                        <div class="voucher-card__metric" style="font-size: 26px; padding-top: 5px;">20,426+</div>
+                        <h3>Climate Impact (tCO₂e)</h3>
                     </div>
                 </div>
                 <div class="voucher-card" style="background-color: #e6f0ec; border-color: #00703c;">
                     <div>
-                        <div class="voucher-card__metric">Qualified</div>
-                        <h3>Development Opportunities</h3>
+                        <div class="voucher-card__metric" style="font-size: 19px; padding-top: 12px; padding-bottom: 4px;">16,029,297,777</div>
+                        <h3>Value Created (Rs)</h3>
                     </div>
                 </div>
             </div>
@@ -329,14 +348,30 @@
 
             <h2>8. Stop Leaving Environmental Value Unmeasured</h2>
             <p>Your sustainability investments may already be creating more value than you realize.</p>
-            <a href="https://forms.gle/AsLuhUYuWEdAbAK26" class="govuk-button" style="margin-top: 10px;">Register My Assets</a>
+            <a href="https://forms.gle/dMhjXy4J1F82fVbo7" target="_blank" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Register My Assets</a>
         </main>
 
-        <footer>
-            <p>Analytical Audit Division | <a href="mailto:admin@earthcarbonfoundation.org">admin@earthcarbonfoundation.org</a></p>
-            <p style="margin-top: 10px; font-size: 14px; color: #505a5f;">All information systems are managed in alignment with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim under the DPDP Act 2023.</p>
-        </footer>
+        <p style="font-size: 16px; color: #505a5f;">Analytical Audit Division | <a href="mailto:admin@earthcarbonfoundation.org" style="color: #1d70b8; text-decoration: none;">admin@earthcarbonfoundation.org</a></p>
+        <p style="margin-top: 10px; margin-bottom: 60px; font-size: 14px; color: #505a5f;">All information systems are managed in alignment with the "Registry Master Terms of Service" and "Institutional Privacy & Data Protection Policy" verbatim under the DPDP Act 2023.</p>
     </div>
+
+    <!-- EARTH CARBON FOUNDATION MASTER BRAND FOOTER -->
+    <footer style="background-color: #081c15; color: white; text-align: center; padding: 60px 20px; font-family: Arial, sans-serif; font-size: 0.95rem; border-top: 5px solid #2d6a4f; width: 100%;">
+        <div style="font-size: 1.4rem; font-weight: 700; letter-spacing: 0.5px; margin-bottom: 6px; color: #ffffff;">Earth Carbon Foundation</div>
+        <div style="color: #b7e4c7; font-size: 0.95rem; margin-bottom: 35px; letter-spacing: 1.5px; text-transform: uppercase; font-weight: 500;">Measure. Register. Develop. Grow.</div>
+        <div style="display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; max-width: 900px; margin: 0 auto;">
+            <a href="https://atmanirbharnow.org" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">AtmanirbharNow</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://time2repay.com" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Time2Repay</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://100mtons.com" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">100M Tons</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://registryearthcarbon.org/" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Climate Asset Registry</a>
+            <span style="color: #2d6a4f;">|</span>
+            <a href="https://earthcarbonfoundation.org/campus" style="color: #d8f3dc; text-decoration: none; font-weight: 500;">Atmanirbhar Campus Index</a>
+        </div>
+    </footer>
+    <!-- END MASTER BRAND FOOTER -->
 
 </body>
 </html>
