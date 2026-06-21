@@ -120,6 +120,28 @@
             font-style: italic;
         }
 
+        /* Progress Bar Styles */
+        .progress-wrapper {
+            margin: 25px 0 40px 0;
+            background-color: #f3f2f1;
+            border: 4px solid #0b0c0c;
+            padding: 20px;
+        }
+        .progress-container {
+            background: #e2e8f0;
+            border-radius: 20px;
+            height: 24px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 10px;
+        }
+        .progress-bar {
+            width: 17%; 
+            background: linear-gradient(90deg, #2d6a4f 0%, #40916c 100%);
+            height: 100%;
+            border-radius: 20px;
+        }
+
         /* GOV.UK Green Action Button */
         .govuk-button {
             background-color: #00703c;
@@ -260,51 +282,32 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 5: DEVELOPMENT PATHWAY -->
-            <h2>4. Development Pathway</h2>
-            <p>Every asset starts with registration. Your tracking metrics help define your baseline development bracket:</p>
+            <!-- SECTION 5: DEVELOPMENT PATHWAY & PROGRAMS MERGED -->
+            <h2>4. Registry Development Pathways</h2>
+            <p>Every asset starts with registration. Your tracking metrics help define your baseline development bracket. Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
 
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Development Status</th>
-                        <th>CER Potential</th>
+                        <th>Development Status Framework</th>
+                        <th>CER Potential Range</th>
+                        <th>Annual Registry Contribution</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td>101–500</td></tr>
-                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td></tr>
-                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td></tr>
-                </tbody>
-            </table>
-
-            <!-- SECTION 6: DEVELOPMENT PROGRAMS -->
-            <h2>5. Development Programs</h2>
-            <p>Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
-            
-            <table class="govuk-table">
-                <thead>
-                    <tr>
-                        <th>Category</th>
-                        <th>Fee</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Starter Development</strong></td><td><strong>₹3,999</strong></td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td><strong>₹7,999</strong></td></tr>
-                    <tr><td><strong>Institutional Development</strong></td><td><strong>₹11,999</strong></td></tr>
+                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td>101–500</td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td><td><strong>₹3,999</strong></td></tr>
+                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td><td><strong>₹7,999</strong></td></tr>
+                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td><td><strong>₹11,999</strong></td></tr>
                 </tbody>
             </table>
             <div class="table-note-sub">
                 Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
             </div>
 
-            <!-- SECTION 7: LIVE REGISTRY ACTIVITY / IMPACT TRACKING -->
-            <h2>6. Growing Environmental Asset Network</h2>
+            <!-- SECTION 6: LIVE REGISTRY ACTIVITY / IMPACT TRACKING -->
+            <h2>5. Growing Environmental Asset Network</h2>
             <p>Real-time progress across our shared nationwide registry database:</p>
             
             <div class="voucher-card-container">
@@ -334,8 +337,19 @@
                 </div>
             </div>
 
-            <!-- SECTION 8: WHAT HAPPENS NEXT? -->
-            <h2>7. What Happens Next?</h2>
+            <!-- Custom 100M Ton Progress Tracker Element -->
+            <div class="progress-wrapper">
+                <div style="display: flex; justify-content: space-between; align-items: center; font-weight: bold; font-family: Arial, sans-serif;">
+                    <span style="font-size: 18px; color: #003020;">Mission Target Tracker: 100M Tons by 2030</span>
+                    <span style="font-size: 16px; color: #b01a1a;">Still To Go: 99,983,000 tCO₂e</span>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar"></div>
+                </div>
+            </div>
+
+            <!-- SECTION 7: WHAT HAPPENS NEXT? -->
+            <h2>6. What Happens Next?</h2>
             <p>Our process is clear, fast, and designed to map your accomplishments without adding paperwork:</p>
             
             <ol class="govuk-list--number" style="margin-bottom: 40px;">
@@ -346,7 +360,7 @@
                 <li><strong>Opportunity Review:</strong> Access your profile overview to review long-term metrics.</li>
             </ol>
 
-            <h2>8. Stop Leaving Environmental Value Unmeasured</h2>
+            <h2>7. Stop Leaving Environmental Value Unmeasured</h2>
             <p>Your sustainability investments may already be creating more value than you realize.</p>
             <a href="https://forms.gle/dMhjXy4J1F82fVbo7" target="_blank" class="govuk-button" style="margin-top: 10px; margin-bottom: 40px;">Register My Assets</a>
         </main>
