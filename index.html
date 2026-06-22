@@ -158,6 +158,22 @@
             margin-bottom: 30px;
             font-style: italic;
         }
+        .inclusion-list {
+            margin: 20px 0;
+            list-style: none;
+            font-size: 19px;
+        }
+        .inclusion-list li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .inclusion-list li::before {
+            content: "•";
+            color: #00703c;
+            font-weight: bold;
+            margin-right: 10px;
+        }
 
         /* Progress Bar Styles */
         .progress-wrapper {
@@ -256,7 +272,7 @@
             
             <a href="https://forms.gle/dMhjXy4J1F82fVbo7" target="_blank" class="govuk-button" style="margin-bottom: 40px;">Assess My Assets</a>
 
-            <!-- SECTION 2: THE HIDDEN PROBLEM (4 CARDS IN A SINGLE LINE) -->
+            <!-- SECTION 2: THE HIDDEN PROBLEM -->
             <h2>1. Money Is Spent. Value Often Goes Untracked.</h2>
             <p>Organizations invest capital, but many never document the long-term value these assets continue to generate. As a result:</p>
             
@@ -335,29 +351,40 @@
                 </tbody>
             </table>
 
-            <!-- SECTION 5: DEVELOPMENT PATHWAY & PROGRAMS MERGED -->
-            <h2>4. Registry Development Pathways</h2>
+            <!-- SECTION 5: DEVELOPMENT PATHWAY -->
+            <h2>4. Climate Asset Registry Participation</h2>
             <p>Every asset starts with registration. Your tracking metrics help define your baseline development bracket. Assets showing significant recovery potential may qualify for advanced development. Fees apply only after review and classification:</p>
 
             <table class="govuk-table">
                 <thead>
                     <tr>
-                        <th>Development Status Framework</th>
-                        <th>CER Potential Range</th>
+                        <th>Development Status</th>
+                        <th>Asset Size (kW Equivalent)</th>
                         <th>Annual Registry Contribution</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td><strong>Registered Asset</strong></td><td>1–100</td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Watchlist</strong></td><td>101–500</td><td><span class="status-tag">Free</span></td></tr>
-                    <tr><td><strong>Starter Development</strong></td><td>501–5,000</td><td><strong>₹3,999</strong></td></tr>
-                    <tr><td><strong>Growth Development</strong></td><td>5,001–25,000</td><td><strong>₹7,999</strong></td></tr>
-                    <tr><td><strong>Institutional Development</strong></td><td>25,000+</td><td><strong>₹11,999</strong></td></tr>
+                    <tr><td><strong>Registered Asset</strong></td><td>1–50 kW</td><td><span class="status-tag">Free</span></td></tr>
+                    <tr><td><strong>Watchlist</strong></td><td>51–250 kW</td><td><strong>₹4,999</strong></td></tr>
+                    <tr><td><strong>Starter </strong></td><td>251–500 kW</td><td><strong>₹9,999</strong></td></tr>
+                    <tr><td><strong>Growth </strong></td><td>501–750 kW</td><td><strong>₹14,999</strong></td></tr>
+                    <tr><td><strong>Institutional </strong></td><td>751 kW–1 MW</td><td><strong>₹19,999</strong></td></tr>
+                    <tr><td><strong>Corporate </strong></td><td>Above 1 MW</td><td><strong>On Request</strong></td></tr>
+                    <tr><td><strong>Strategic Projects</strong></td><td>Large / Complex Assets</td><td><strong>Proposal on Request</strong></td></tr>
                 </tbody>
             </table>
-            <div class="table-note-sub">
-                Includes 12 months of registry participation, asset tracking, development screening and opportunity assessment.
-            </div>
+            
+            <h3 style="margin-top: 30px;">Includes:</h3>
+            <ul class="inclusion-list">
+                <li>12 Months Registry Participation</li>
+                <li>Registry ID & Registry Link</li>
+                <li>Climate Asset Tracking</li>
+                <li>Opportunity Assessment</li>
+                <li>Development Screening</li>
+                <li>Methodology Mapping</li>
+                <li>Eligibility Review</li>
+                <li>Access to Future Bundled Program Consideration</li>
+            </ul>
 
             <!-- SECTION 6: LIVE REGISTRY ACTIVITY / IMPACT TRACKING -->
             <h2>5. Growing Environmental Asset Network</h2>
@@ -401,7 +428,7 @@
                 </div>
             </div>
 
-            <!-- NEW SECTION: SHARE YOUR IMPACT (PLACED BELOW KPI COUNTERS & TRACKER) -->
+            <!-- NEW SECTION: SHARE YOUR IMPACT -->
             <div class="impact-share-box">
                 <h2 style="margin-top: 0; border-bottom: none; padding-bottom: 0; font-size: 32px;">Share Your Impact</h2>
                 <p style="font-size: 18px; color: #505a5f; margin-bottom: 15px;">Environmental action becomes more powerful when it is visible.</p>
